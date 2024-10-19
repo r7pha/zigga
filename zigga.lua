@@ -33,8 +33,6 @@ local a={["_main"]=Instance.new("ScreenGui"),["_root"]=Instance.new("Frame"),["_
 	
 	if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
 	    local humanoidRootPart = player.Character.HumanoidRootPart
-	    
-	    -- Fling: Aplica uma força grande no HumanoidRootPart
 	    humanoidRootPart.Velocity = Vector3.new(1000, 1000, 1000)
 	end
 	]]game:GetService("ReplicatedStorage").THUGBOREA:FireServer(i)end)end;local function l()local d=Instance.new("LocalScript")d.Name="t"d.Parent=a["_rename_me3"]local e=require;local require=function(f)local g=b[f]if g then return g()end;return e(f)end;d.Parent.MouseButton1Click:Connect(function()local h=d.Parent.Parent.trgt.Text;local m=game.Players.LocalPlayer.Name;local i=[[
